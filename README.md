@@ -5,13 +5,13 @@ Created four threads Input, Reverse, Capital and Shift for their respective func
 ## Creating Threads
 First, I initialized an empty global string variable in which the string will be stored and passed as an argument to different functions (threads).
 
-Thread 1 => Input Thread
+Thread 1 => `Input Thread`
 
-Thread 2 => Reverse Thread
+Thread 2 => `Reverse Thread`
 
-Thread 3 => Capital Thread
+Thread 3 => `Capital Thread`
 
-Thread 4 => Shift Thread
+Thread 4 => `Shift Thread`
 
 ![image](https://user-images.githubusercontent.com/91841622/210602441-d5e8028a-f3eb-4728-8662-8e40bf55b055.png)
 
@@ -21,6 +21,12 @@ Input thread will take string input from user, reverse thread will reverse the s
 capital thread will capitalize the characters of string and output it and shift thread will shift each 
 characters of the string two time (e.g. a will become c) and output it. All the threads wait for input 
 thread when input thread finishes his task all the waiting thread start their work simultaneously. 
+
+## Exception Handling
+
+Exception is handled on input thread. The input taken from user should be Alphabets and not any integers, if any number is entered then user is requested again to enter valid string.
+
+#### To use without Exception uncomment the first `input` function.
 
 ## Working of Threads
 
